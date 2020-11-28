@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fcb0528820550499d051030855ca6d, type: 3}
+  m_Name: AC v1.07b
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 6fed46b7047bdf94eb0425b756394e5b, type: 3}
+  title: Animal Controller Log
+  sections:
+  - heading: V1.07b
+    text: ' '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Annoying bug that jump into the sky when was on a ledge or the
+      ground disappear'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added: Enable Disable Sound Event Method'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added: Perching Zone (Birds)'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added Random Parameter... it was interfering with the Int ID when it
+      was used as a Mode Status'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added Speed Lock Change Method so It can be able to lock speed changes
+      .'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed Bug: when using AIAnimal Control, the Next target on an Action
+      zone is Null,   the animal kept trying to enable the Zone'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: When Jumping without Forward movement the animal did not can move
+      forward when Air Control was enabled'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added: Speed Methods to change Speed via Code '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Fly |Try Exit| Condition (Animal Scale and Land Multiplier were
+      not applied)'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Lomotion |TryActivate| Condition (UPDown Axis was Ignored)'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed All Animator Exit Conditions on all Assets'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added Tool Tips to the States Parameters'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed Bug (when an animal get stuck on a Falling animation with the colliders
+      and It can land the Gravity Acceleration get reset.'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Created Basic Jump State'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed Bug: Glide Only left The Current Speed disabled.'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed Bug: AI Animal Control was failing, when the agent was out of the
+      NavMesh because the Agent Component was disable. ****'
+    linkText: 
+    url: 
+  - heading: 
+    text: ' - Added Gravity Direction to the Free Look Camera'
+    linkText: 
+    url: 
+  - heading: 
+    text: ' - Fixed: Rotation on the Free Look Camera is now updated with the Update
+      Type (Fixed or Late Update)'
+    linkText: 
+    url: 

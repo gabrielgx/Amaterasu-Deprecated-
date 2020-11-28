@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fcb0528820550499d051030855ca6d, type: 3}
+  m_Name: AC v1.1.1
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 6fed46b7047bdf94eb0425b756394e5b, type: 3}
+  title: Animal Controller Log
+  sections:
+  - heading: V1.1.1
+    text: ' '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Down and Up Inputs Connect with the States with OnInputDown Event
+      instead Of InputChanged Event'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Order of Check State activation conditions on the Animal Controller'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Idle State Try Activation was using MovementAxis Smooth instead
+      of MovementAxis Raw'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: GlideOnly on Fly State + Camera Input caused Unwanted behaviour'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Fly Allow Exit On Input Changes when is using Toggle and Press'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Creating Layers Now does not create duplicated Layers with the
+      same name'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: On Point Click Error throw by the Animal AI Control when A mode
+      was interrupted by a new Destination'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Removed: Instantiate Parameter on the Effect Manager.'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Stopping 1 frame on WayPoints with no wait time'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Lock Movement with AI has ignored.'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed Bug: Attack trigger where not set to Trigger on Enable.'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added: Debug Aim Name.'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Aim Assist was using the Root Transform instead of the Collider'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Attack Trigger (On Exit Enemy Stats) where skipped when the trigger
+      was disable.'
+    linkText: 
+    url: 

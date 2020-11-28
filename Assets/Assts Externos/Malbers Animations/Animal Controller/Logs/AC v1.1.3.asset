@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fcb0528820550499d051030855ca6d, type: 3}
+  m_Name: AC v1.1.3
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 6fed46b7047bdf94eb0425b756394e5b, type: 3}
+  title: Animal Controller Log
+  sections:
+  - heading: V1.1.2
+    text: ' '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Effect Manager Editor issue with empty Effects.'
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Scriptable Reference variables with null  Scriptable Vars '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added: Zone new Parameter Remove Animal on Active '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added Degeneration Wait Time to the Stat Component. '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: When Stats gets to 0 degen did not start again. '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: When going Backwards with no Root Motion, it was going forward '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Attack Triggers have now Which Mode Activate  and  which Ability Index '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Fixed: Inspector for Message Behaviours  '
+    linkText: 
+    url: 
+  - heading: 
+    text: '- Added: State_AllowExit() to the Animal Callbacks '
+    linkText: 
+    url: 
