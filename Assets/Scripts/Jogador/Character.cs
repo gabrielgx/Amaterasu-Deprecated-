@@ -9,7 +9,7 @@ public sealed class Character : MonoBehaviour
     [SerializeField] private float moveSpeed = 2;
     [SerializeField] private float runSpeed = 5;
     [SerializeField] private float turnSpeed = 360;
-
+    [SerializeField] private float jumpSpeed = 8f;
 
     [Header("Componentes")]
     [SerializeField] private Animator animator;
@@ -46,6 +46,21 @@ public sealed class Character : MonoBehaviour
     public float GetMaxSpeed()
     {
         return runSpeed;
+    }
+
+    public float GetJumpSpeed()
+    {
+        return jumpSpeed;
+    }
+
+    public bool GetGrounded()
+    {
+        return controller.IsGrounded;
+    }
+
+    public void SetGrounded(bool grounded)
+    {
+        controller.IsGrounded = grounded;
     }
 }
 

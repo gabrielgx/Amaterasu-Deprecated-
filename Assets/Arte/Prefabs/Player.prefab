@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4428830779637965096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2211363037370380086}
+  m_Layer: 0
+  m_Name: JumpState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2211363037370380086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4428830779637965096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8289504393488837361}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8289504393488837360
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,6 +59,7 @@ Transform:
   m_Children:
   - {fileID: 8289504394494803354}
   - {fileID: 8289504395063541319}
+  - {fileID: 2211363037370380086}
   m_Father: {fileID: 8289504395507762118}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -233,6 +264,7 @@ MonoBehaviour:
   moveSpeed: 5
   runSpeed: 10
   turnSpeed: 500
+  jumpSpeed: 8
   animator: {fileID: 1944904357775657267}
   idleState: {fileID: 8289504394494803353}
   controller: {fileID: 8289504395507762117}
@@ -251,6 +283,7 @@ MonoBehaviour:
   character: {fileID: 8289504395507762119}
   idleState: {fileID: 8289504394494803353}
   ambulationState: {fileID: 8289504395063541318}
+  groundDetector: {fileID: 0}
 --- !u!1001 &8289504394699308966
 PrefabInstance:
   m_ObjectHideFlags: 0

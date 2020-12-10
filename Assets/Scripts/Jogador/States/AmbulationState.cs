@@ -6,11 +6,15 @@ using MenteBacata.ScivoloCharacterController;
 public sealed class AmbulationState : CharacterState
 {
     [SerializeField] private CharacterMover characterMover;
+    
     private float gravitySpeed = 5f;
+    private float nextUngroundedTime = -1f;
+
+
 
     private void OnEnable()
     {
-        Character.Animator.CrossFade("Ambulation", 0.015f);
+        Character.Animator.CrossFade("Ambulation", 0.025f);
     }
 
     private void Update()
@@ -18,6 +22,8 @@ public sealed class AmbulationState : CharacterState
         Vector3 moveDirection = Character.Controller.MoveDirection;
         float moveSpeed = Character.GetMoveSpeed();
         float turnSpeed = Character.GetTurnSpeed();
+        float verticalSpeed = Character.GetJumpSpeed();
+        
 
         Vector3 moveVelocity = moveDirection * moveSpeed;
         moveVelocity.y = Mathf.Min(moveVelocity.y, -gravitySpeed);
@@ -30,6 +36,8 @@ public sealed class AmbulationState : CharacterState
         characterMover.Move(moveVelocity * Time.deltaTime);
 
         Character.Animator.SetFloat("MoveSpeed", moveSpeed / Character.GetMaxSpeed());
+       
 
+        
     }
 }
